@@ -1,0 +1,18 @@
+#ifndef VDAQIO_H
+#define VDAQIO_H
+
+
+class VDAQIO
+{
+public:
+    VDAQIO();
+    virtual void SetDO(int index , bool state)=0;
+    virtual bool ReadDI(int index , bool &state)=0;
+    virtual bool ReadDO(int index , bool &state)=0;
+private :
+    int _DOCount;
+    int _DICount;
+    bool _InitState;
+};
+
+#endif // VDAQIO_H
