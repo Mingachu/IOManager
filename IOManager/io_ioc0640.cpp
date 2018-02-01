@@ -3,7 +3,7 @@
 
 IO_IOC0640::IO_IOC0640():DAQIOBase()
 {
-
+    _CardName="IOC0640";
 }
 
 bool IO_IOC0640::Init()

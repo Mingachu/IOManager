@@ -16,12 +16,24 @@ SOURCES += main.cpp\
         mainwindow.cpp \
         iomanager.cpp \
     io_ioc0640.cpp \
-    DAQIOBase.cpp
+    DAQIOBase.cpp \
+    simulationio.cpp \
+    diobtn.cpp \
+    test.cpp \
+    diocommandtable.cpp \
+    diocommandbase.cpp \
+    commandsetdo.cpp
 
 HEADERS  += mainwindow.h \
         iomanager.h \
     io_ioc0640.h \
-    DAQIOBase.h
+    DAQIOBase.h \
+    simulationio.h \
+    diobtn.h \
+    test.h \
+    diocommandtable.h \
+    diocommandbase.h \
+    commandsetdo.h
 
 
 #DAQIO SDK
@@ -33,4 +45,5 @@ LIBS += -L./IOC0640lib/ -lIOC0640
 ##LIBS += $$IOLIB\IOC0640lib\IOC0640.lib
 
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    test.ui

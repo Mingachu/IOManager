@@ -27,3 +27,10 @@ int DAQIOBase::GetCardProperty(IOCardProperty item, const int &CardNum)
     }
     return 0;
 }
+
+void DAQIOBase::GetCardName(string &name)
+{
+    //std::vector<std::string> ResData;
+
+    name=_CardName;
+}
