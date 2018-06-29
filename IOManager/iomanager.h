@@ -1,16 +1,32 @@
 #ifndef IOMANAGER_H
 #define IOMANAGER_H
 
+#if defined(IOManager_LIBRARY)
+#  define IOManagerSHARED_EXPORT __declspec(dllexport)
+#else
+#  define IOManagerSHARED_EXPORT __declspec(dllimport)
+#endif
 
+#include "string"
+#include "vector"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+//#include "io_ioc0640.h"
+//#include "simulationio.h"
 #include "DAQIOBase.h"
-#include "io_ioc0640.h"
-#include "simulationio.h"
 
-class IOManager:public DAQIOBase
+namespace DAQIO {
+
+//class DAQIOBase;
+
+class IOManagerSHARED_EXPORT IOManager:public DAQIOBase
 {
 public:
 
     IOManager();
+    void SetSimuCard(const int &CardNum ,const int &DOCount,const int &DICount );
     bool Init();
     bool SetDO(const int &CardNum, const int &index, const bool &state);
     bool ReadDI(const int &CardNum, const int &index, bool &state);
@@ -28,5 +44,8 @@ private:
     vector<DAQIOBase*> _DAQIOlist;
     vector<IOTable> _Cardlist;
 };
-
+#ifdef __cplusplus
+}
+}
+#endif
 #endif // IOMANAGER_H

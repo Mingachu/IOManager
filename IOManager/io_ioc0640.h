@@ -7,7 +7,7 @@
 
 using namespace std;
 
-
+using namespace DAQIO;
 class IO_IOC0640 : public DAQIOBase
 {
 public:

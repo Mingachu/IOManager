@@ -49,10 +49,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //qDebug() << showname.data()<<showname.c_str();
     //printf(showname.c_str());
 }
-int selectCardindex;
-int PageStartIndex;
-vector<QPushButton*> _btnDIBtn;
-vector<QPushButton*> _btnDOBtn;
+
 void MainWindow::testpass(vector<string> &command ,string &ss, std::function<bool()> &pptr)
 {
 

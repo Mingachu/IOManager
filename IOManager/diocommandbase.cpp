@@ -1,4 +1,5 @@
 #include "diocommandbase.h"
+#include "Windows.h"
 DIOCommandBase::DIOCommandBase(IOManager *IOPtr)
 {
     //LabelName=name;

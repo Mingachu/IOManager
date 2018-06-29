@@ -1,5 +1,8 @@
 #include "iomanager.h"
 #include "string"
+#include "io_ioc0640.h"
+#include "simulationio.h"
+#include "DAQIOBase.h"
 
 IOManager::IOManager():DAQIOBase()
 {
@@ -7,10 +10,16 @@ IOManager::IOManager():DAQIOBase()
     _DAQIOlist.push_back(new SimulationIO);
     _DAQIOlist.push_back(new IO_IOC0640);
 }
-
+void IOManager::SetSimuCard(const int &CardNum, const int &DOCount, const int &DICount)
+{
+    (dynamic_cast<SimulationIO*>(_DAQIOlist[0]))->setSimuPr(DOCount,DICount,CardNum);
+}
 bool IOManager::Init()
 {
     //std::vector<DAQIOBase*>::iterator _DAQIter = _DAQIOlist.begin();
+    _Cardlist.clear();
+    _DOCount.clear();
+    _DICount.clear();
     bool res=false;
     int len=_DAQIOlist.size();
     for(int i=0 ; i<len ; i++)

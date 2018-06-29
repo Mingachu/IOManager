@@ -22,7 +22,7 @@ public:
     void setupUi(QWidget *test)
     {
         if (test->objectName().isEmpty())
-            test->setObjectName(QStringLiteral("test"));
+            test->setObjectName(QLatin1String("test"));
         test->resize(400, 300);
 
         retranslateUi(test);

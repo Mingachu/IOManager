@@ -11,6 +11,8 @@ namespace Ui {
 class MainWindow;
 }
 
+using namespace DAQIO;
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -41,6 +43,10 @@ private:
     IOManager *_DAQIO;
     DIOCommandBase *testcomplier;
     void RefreshIOState();
+    int selectCardindex;
+    int PageStartIndex;
+    vector<QPushButton*> _btnDIBtn;
+    vector<QPushButton*> _btnDOBtn;
 };
 
 #endif // MAINWINDOW_H

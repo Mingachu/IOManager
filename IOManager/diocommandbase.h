@@ -8,7 +8,7 @@
 #include <time.h>
 #include "functional"
 using namespace std;
-
+using namespace DAQIO;
 //typedef bool (*DIOOperator)(string &msg);
 typedef std::function<bool(string &msg)> DIOOperator;
 class DIOCommandBase

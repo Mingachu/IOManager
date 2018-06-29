@@ -9,8 +9,12 @@ QT       += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = IOManager
-TEMPLATE = app
+#TEMPLATE = app
+TEMPLATE = lib
 
+DEFINES += IOManager_LIBRARY
+
+DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
@@ -47,3 +51,8 @@ LIBS += $$PWD\IOC0640lib/IOC0640.lib
 
 FORMS    += mainwindow.ui \
     test.ui
+
+unix {
+    target.path = /usr/lib
+    INSTALLS += target
+}

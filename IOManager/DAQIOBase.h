@@ -1,9 +1,12 @@
 #ifndef DAQIOBase_H
 #define DAQIOBase_H
 
-#include "iostream"
+//#include "iostream"
 #include "vector"
 using namespace std;
+
+namespace DAQIO {
+
 enum class IOCardProperty{CardCount=0,DOCount=1,DICount=2,InitState=3};
 class DAQIOBase
 {
@@ -20,7 +23,6 @@ public:
     virtual void GetErrorMsg(char* Msg)=0;
 protected :
 
-
     vector<int> _DOCount;
     vector<int> _DICount;
     //vector<int> _DOCount
@@ -33,5 +35,5 @@ protected :
 
 
 };
-
+}
 #endif // DAQIOBase_H

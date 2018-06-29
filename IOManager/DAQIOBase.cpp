@@ -1,5 +1,5 @@
 #include "DAQIOBase.h"
-
+using namespace DAQIO;
 DAQIOBase::DAQIOBase()
 {
     _CardCount=0;

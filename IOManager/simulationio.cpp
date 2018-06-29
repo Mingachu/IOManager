@@ -10,17 +10,24 @@ SimulationIO::SimulationIO() :DAQIOBase()
 
 bool SimulationIO::Init()
 {
+    _DOCount.clear();
+    _DICount.clear();
+    SimuDO.clear();
+    SimuDI.clear();
     for (int i=0 ;i<_CardCount ; i++)
     {
-        bool *NewDO=new bool[simucount];
-        bool *NewDI=new bool[simucount];
-        for(int i=0 ; i<simucount ; i++)
+        bool *NewDO=new bool[simuDOcount];
+        bool *NewDI=new bool[simuDIcount];
+        for(int i=0 ; i<simuDOcount ; i++)
         {
             NewDO[i]=false;
+        }
+        for(int i=0 ; i<simuDIcount ; i++)
+        {
             NewDI[i]=false;
         }
-        _DOCount.push_back(simucount);
-        _DICount.push_back(simucount);
+        _DOCount.push_back(simuDOcount);
+        _DICount.push_back(simuDIcount);
         SimuDO.push_back(NewDO);
         SimuDI.push_back(NewDI);
     }
@@ -46,6 +53,13 @@ bool SimulationIO::ReadDO(const int &CardNum, const int &index, bool &state)
 {
     state=SimuDO[CardNum][index];
     return true ;
+}
+
+void SimulationIO::setSimuPr(const int &DOCount, const int &DICount, const int &CardCount)
+{
+    simuDIcount=DICount;
+    simuDOcount=DOCount;
+    simuCardcount=CardCount;
 }
 
 void SimulationIO::GetErrorMsg(char *Msg)

@@ -62,19 +62,19 @@ public:
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
-            MainWindow->setObjectName(QStringLiteral("MainWindow"));
+            MainWindow->setObjectName(QLatin1String("MainWindow"));
         MainWindow->resize(593, 320);
         centralWidget = new QWidget(MainWindow);
-        centralWidget->setObjectName(QStringLiteral("centralWidget"));
+        centralWidget->setObjectName(QLatin1String("centralWidget"));
         verticalLayout_3 = new QVBoxLayout(centralWidget);
         verticalLayout_3->setSpacing(6);
         verticalLayout_3->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
+        verticalLayout_3->setObjectName(QLatin1String("verticalLayout_3"));
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(6);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setObjectName(QLatin1String("horizontalLayout"));
         comboBox = new QComboBox(centralWidget);
-        comboBox->setObjectName(QStringLiteral("comboBox"));
+        comboBox->setObjectName(QLatin1String("comboBox"));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -89,7 +89,7 @@ public:
         horizontalLayout->addItem(horizontalSpacer);
 
         label = new QLabel(centralWidget);
-        label->setObjectName(QStringLiteral("label"));
+        label->setObjectName(QLatin1String("label"));
         QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy1.setHorizontalStretch(2);
         sizePolicy1.setVerticalStretch(0);
@@ -103,7 +103,7 @@ public:
         verticalLayout_3->addLayout(horizontalLayout);
 
         splitter = new QSplitter(centralWidget);
-        splitter->setObjectName(QStringLiteral("splitter"));
+        splitter->setObjectName(QLatin1String("splitter"));
         QSizePolicy sizePolicy2(QSizePolicy::Expanding, QSizePolicy::Preferred);
         sizePolicy2.setHorizontalStretch(1);
         sizePolicy2.setVerticalStretch(1);
@@ -116,7 +116,7 @@ public:
         splitter->setHandleWidth(1);
         splitter->setChildrenCollapsible(false);
         LeftWidget = new QWidget(splitter);
-        LeftWidget->setObjectName(QStringLiteral("LeftWidget"));
+        LeftWidget->setObjectName(QLatin1String("LeftWidget"));
         QSizePolicy sizePolicy3(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy3.setHorizontalStretch(0);
         sizePolicy3.setVerticalStretch(0);
@@ -126,9 +126,9 @@ public:
         verticalLayout_2 = new QVBoxLayout(LeftWidget);
         verticalLayout_2->setSpacing(6);
         verticalLayout_2->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        verticalLayout_2->setObjectName(QLatin1String("verticalLayout_2"));
         DILabel = new QLabel(LeftWidget);
-        DILabel->setObjectName(QStringLiteral("DILabel"));
+        DILabel->setObjectName(QLatin1String("DILabel"));
         QSizePolicy sizePolicy4(QSizePolicy::Minimum, QSizePolicy::Fixed);
         sizePolicy4.setHorizontalStretch(0);
         sizePolicy4.setVerticalStretch(0);
@@ -140,7 +140,7 @@ public:
         verticalLayout_2->addWidget(DILabel);
 
         DOLabel = new QLabel(LeftWidget);
-        DOLabel->setObjectName(QStringLiteral("DOLabel"));
+        DOLabel->setObjectName(QLatin1String("DOLabel"));
         sizePolicy4.setHeightForWidth(DOLabel->sizePolicy().hasHeightForWidth());
         DOLabel->setSizePolicy(sizePolicy4);
         DOLabel->setAlignment(Qt::AlignCenter);
@@ -151,7 +151,7 @@ public:
 
         splitter->addWidget(LeftWidget);
         MiddleWidget = new QWidget(splitter);
-        MiddleWidget->setObjectName(QStringLiteral("MiddleWidget"));
+        MiddleWidget->setObjectName(QLatin1String("MiddleWidget"));
         QSizePolicy sizePolicy5(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy5.setHorizontalStretch(1);
         sizePolicy5.setVerticalStretch(1);
@@ -160,10 +160,10 @@ public:
         gridLayout = new QGridLayout(MiddleWidget);
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
-        gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        gridLayout->setObjectName(QLatin1String("gridLayout"));
         splitter->addWidget(MiddleWidget);
         RightWidget = new QWidget(splitter);
-        RightWidget->setObjectName(QStringLiteral("RightWidget"));
+        RightWidget->setObjectName(QLatin1String("RightWidget"));
         sizePolicy.setHeightForWidth(RightWidget->sizePolicy().hasHeightForWidth());
         RightWidget->setSizePolicy(sizePolicy);
         RightWidget->setMinimumSize(QSize(0, 0));
@@ -175,23 +175,23 @@ public:
         verticalLayout = new QVBoxLayout(RightWidget);
         verticalLayout->setSpacing(6);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setObjectName(QLatin1String("verticalLayout"));
         verticalLayout->setSizeConstraint(QLayout::SetDefaultConstraint);
         verticalLayout->setContentsMargins(9, -1, -1, 9);
         BtnPreviousPage = new QPushButton(RightWidget);
-        BtnPreviousPage->setObjectName(QStringLiteral("BtnPreviousPage"));
+        BtnPreviousPage->setObjectName(QLatin1String("BtnPreviousPage"));
 
         verticalLayout->addWidget(BtnPreviousPage);
 
         labelPageNum = new QLabel(RightWidget);
-        labelPageNum->setObjectName(QStringLiteral("labelPageNum"));
+        labelPageNum->setObjectName(QLatin1String("labelPageNum"));
         sizePolicy4.setHeightForWidth(labelPageNum->sizePolicy().hasHeightForWidth());
         labelPageNum->setSizePolicy(sizePolicy4);
 
         verticalLayout->addWidget(labelPageNum);
 
         BtnNextPage = new QPushButton(RightWidget);
-        BtnNextPage->setObjectName(QStringLiteral("BtnNextPage"));
+        BtnNextPage->setObjectName(QLatin1String("BtnNextPage"));
         BtnNextPage->setEnabled(false);
 
         verticalLayout->addWidget(BtnNextPage);
@@ -202,14 +202,14 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setSpacing(6);
-        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
+        horizontalLayout_2->setObjectName(QLatin1String("horizontalLayout_2"));
         BtnOperation = new QPushButton(centralWidget);
-        BtnOperation->setObjectName(QStringLiteral("BtnOperation"));
+        BtnOperation->setObjectName(QLatin1String("BtnOperation"));
 
         horizontalLayout_2->addWidget(BtnOperation);
 
         textInput = new QLineEdit(centralWidget);
-        textInput->setObjectName(QStringLiteral("textInput"));
+        textInput->setObjectName(QLatin1String("textInput"));
 
         horizontalLayout_2->addWidget(textInput);
 
@@ -218,16 +218,16 @@ public:
 
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
-        menuBar->setObjectName(QStringLiteral("menuBar"));
+        menuBar->setObjectName(QLatin1String("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 593, 21));
         TestMenuBtn = new QMenu(menuBar);
-        TestMenuBtn->setObjectName(QStringLiteral("TestMenuBtn"));
+        TestMenuBtn->setObjectName(QLatin1String("TestMenuBtn"));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
-        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
+        mainToolBar->setObjectName(QLatin1String("mainToolBar"));
         MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
         statusBar = new QStatusBar(MainWindow);
-        statusBar->setObjectName(QStringLiteral("statusBar"));
+        statusBar->setObjectName(QLatin1String("statusBar"));
         MainWindow->setStatusBar(statusBar);
 
         menuBar->addAction(TestMenuBtn->menuAction());
