@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'test.ui'
 **
-** Created by: Qt User Interface Compiler version 5.7.0
+** Created by: Qt User Interface Compiler version 5.11.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,10 +10,7 @@
 #define UI_TEST_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -35,7 +32,7 @@ public:
 
     void retranslateUi(QWidget *test)
     {
-        test->setWindowTitle(QApplication::translate("test", "Form", 0));
+        test->setWindowTitle(QApplication::translate("test", "Form", nullptr));
     } // retranslateUi
 
 };

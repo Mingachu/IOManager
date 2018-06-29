@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.7.0
+** Created by: Qt User Interface Compiler version 5.11.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -12,11 +12,9 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
@@ -241,15 +239,15 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
-        label->setText(QApplication::translate("MainWindow", "TextLabel", 0));
-        DILabel->setText(QApplication::translate("MainWindow", "\350\274\270\345\205\245\350\250\212\350\231\237 :", 0));
-        DOLabel->setText(QApplication::translate("MainWindow", "\350\274\270\345\207\272\350\250\212\350\231\237 :", 0));
-        BtnPreviousPage->setText(QApplication::translate("MainWindow", "\342\206\221", 0));
-        labelPageNum->setText(QApplication::translate("MainWindow", "TextLabel", 0));
-        BtnNextPage->setText(QApplication::translate("MainWindow", "\342\206\223", 0));
-        BtnOperation->setText(QApplication::translate("MainWindow", "Complier", 0));
-        TestMenuBtn->setTitle(QApplication::translate("MainWindow", "\346\270\254\350\251\246", 0));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
+        label->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
+        DILabel->setText(QApplication::translate("MainWindow", "\350\274\270\345\205\245\350\250\212\350\231\237 :", nullptr));
+        DOLabel->setText(QApplication::translate("MainWindow", "\350\274\270\345\207\272\350\250\212\350\231\237 :", nullptr));
+        BtnPreviousPage->setText(QApplication::translate("MainWindow", "\342\206\221", nullptr));
+        labelPageNum->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
+        BtnNextPage->setText(QApplication::translate("MainWindow", "\342\206\223", nullptr));
+        BtnOperation->setText(QApplication::translate("MainWindow", "Complier", nullptr));
+        TestMenuBtn->setTitle(QApplication::translate("MainWindow", "\346\270\254\350\251\246", nullptr));
     } // retranslateUi
 
 };

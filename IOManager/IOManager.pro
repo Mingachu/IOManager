@@ -40,8 +40,8 @@ HEADERS  += mainwindow.h \
 INCLUDEPATH += $$PWD\\IOC0640lib
 
 ##IOLIB += $$quote(PWD)
-LIBS += -L./IOC0640lib/ -lIOC0640
-
+##LIBS += -L./IOC0640lib/ -lIOC0640
+LIBS += $$PWD\IOC0640lib/IOC0640.lib
 ##LIBS += $$IOLIB\IOC0640lib\IOC0640.lib
 
 
